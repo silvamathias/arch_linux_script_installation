@@ -10,9 +10,10 @@ pacman -S gnome gnome-themes-extra firefox
 # Descomente a linha de baixo para instalar pacotes extras do gnome (jogos e outros apps)
 #pacman -S gnome-extra
 
+echo ----fim instalação pacotes Gnome --------------------------------------
+
 sleep 1s
 
-systemctl enable gdm
+echo iniciando o serviço ---------------------------------------------------
 
-echo ----fim instalação pacotes Gnome --------------------------------------
-sleep 5s
+systemctl enable gdm
