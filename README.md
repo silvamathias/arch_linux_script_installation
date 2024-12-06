@@ -17,7 +17,11 @@ Com este projeto evito de ter que escrever um monte de código, evitando que eu 
 
 ### Demais arquivos iniciados com dezena seguido por letra
 
-A dezena indica a etapa que se deve fazer. A letra indica que a etapa possui mais de uma opção
+A dezena indica a etapa que se deve fazer. A letra indica que a etapa possui mais de uma opção.
+
+Escolha um de cada para montar seu sistema levando em conta seu hardware e seu gosto pessoal. Só faz sentido escolher mais de um a etapa "04" e ter mais de um ambiente gráfico
+
+OBS: Caso tenha escolhido o Gnome, pule a etapa "05" 
 
 ### Arquivos iniciados por centena
 
