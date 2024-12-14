@@ -97,5 +97,5 @@ Obs: O pacote de audio instalado pelo script é o [PulseAudio](https://wiki.arch
 
 ## Finalizando a Instalação
 
-Dentro da pasta "arch_install_scripts" possui outro arquivo **README.md** com mais unstruções sobre a instalação.
+Dentro da pasta "arch_install_scripts" possui outro arquivo **README.md** com mais instruções sobre a instalação.
 
