@@ -1,16 +1,26 @@
 #!/bin/bash
 
 #pacotes para audio
-echo Instalando pacotes para audio -----------------------------------------
+echo ------------------------------------------------------------------------------------------------
+echo --- Instalando pacotes para audio - PulseAudio  ------------------------------------------------
+echo ------------------------------------------------------------------------------------------------
 
-sleep 5s
+echo Instalando pacotes para audio - PulseAudio -----------------------------------------
+
+sleep 2s
 
 pacman -S pulseaudio pulseaudio-bluetooth pulseaudio-jack pulseaudio-alsa sof-firmware pavucontrol
 
-echo ----fim instalação pacotes para audio ---------------------------------
+echo ------------------------------------------------------------------------------------------------
+echo --- Fim instalando pacotes para audio - PulseAudio  --------------------------------------------
+echo ------------------------------------------------------------------------------------------------
 
-echo iniciando serviço -----------------------------------------------------
+sleep 1s
 
-sleep 5s
+echo ------------------------------------------------------------------------------------------------
+echo --- Iniciando serviço de audio - PulseAudio  ---------------------------------------------------
+echo ------------------------------------------------------------------------------------------------
+
+sleep 2s
 
 sulseaudio –start

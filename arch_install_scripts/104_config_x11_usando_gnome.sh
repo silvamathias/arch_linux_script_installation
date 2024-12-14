@@ -4,9 +4,11 @@
 # Mais detalhes no link abaixo
 # https://wiki.archlinux.org/title/GNOME
 
-echo Esta funcionalidade deve ser executada para cada usuário (por conta do caminho usando '~')
+echo ------------------------------------------------------------------------------------------------
+echo --- Esta funcionalidade deve ser executada para cada usuário - por conta do caminho usando '~' -
+echo ------------------------------------------------------------------------------------------------
 
-sleep 5s
+sleep 2s
 
 echo 'export XDG_SESSION_TYPE=x11' >> ~/.xinitrc
 echo 'export GDK_BACKEND=x11' >> ~/.xinitrc

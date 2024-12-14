@@ -77,9 +77,9 @@ para executar, faça:
 
 `bash nome_do_arquivo.sh`
 
-### Arquivo 01
+### Arquivos 00 & 01
 
-É obrigatório. Instalação do sistema em sí e o kernel linux
+São obrigatórios. Instalação do sistema em sí e o kernel linux
 
 ### Demais arquivos iniciados com dezena seguido por letra
 
@@ -87,7 +87,7 @@ A dezena indica a etapa que se deve fazer. A letra indica que a etapa possui mai
 
 Escolha um de cada para montar seu sistema levando em conta seu hardware e seu gosto pessoal. Só faz sentido escolher mais de um a etapa "04" e ter mais de um ambiente gráfico
 
-OBS: Caso tenha escolhido o Gnome, pule a etapa "05" 
+OBS: Caso tenha escolhido o Gnome ou o KDE, pod pular a etapa "05" pois já possuem um gerenciador de login incluso.
 
 ### Arquivos iniciados por centena
 

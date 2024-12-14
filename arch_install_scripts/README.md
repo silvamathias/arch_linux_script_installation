@@ -1,10 +1,22 @@
 # Informações Complementares Para a Instalação
 
-### Finalizando configurações
+Dica:  Use `ls cat README.md | grep passo_` para aparecer no terminal os códigos que deve utilizar
+
+## Instalação básica
+
+Entre os script's **00** e **01**, rode o código abaixo para acessar o sistema recem criado
+
+~~~bash
+arch-chroot /mnt #passo_00
+~~~
+
+## Instalação/configuração
+
+Executes os cádigos a partir do item **02** de acordo com suas necessidades/preferências
+
+## Finalizando configurações
 
 Depois que instalou o sistema vá até o [guia de instalação](https://wiki.archlinux.org/title/Installation_guide_(Português)) utilizando outro dispositivo e complete a instalação
-
-Dica:  Use `ls cat README.md | grep passo_` para aparecer no terminal os códigos que deve utilizar
 
 #### Itens 3.3 e 3.4
 

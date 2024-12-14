@@ -1,16 +1,28 @@
 #!/bin/bash
 
 #bluetooth
-echo Instalando pacotes de Bluetooth ---------------------------------------
 
-sleep 5s
+echo ------------------------------------------------------------------------------------------------
+echo --- Instalando pacotes de Bluetooth  -----------------------------------------------------------
+echo ------------------------------------------------------------------------------------------------
 
-pacman -S bluez bluez-utils gnome-bluetooth-3.0 blueman 
+sleep 2s
 
-echo ----fim instalação pacotes de Bluetooth -------------------------------
+pacman -S bluez bluez-utils gnome-bluetooth-3.0
 
-echo iniciando o serviço ---------------------------------------------------
+# Outra opção de gui para Bluetooth - Este feito em python
+# pacman -S blueman
 
-sleep 5s
+echo ------------------------------------------------------------------------------------------------
+echo --- Fim instalando pacotes de Bluetooth  -------------------------------------------------------
+echo ------------------------------------------------------------------------------------------------
+
+sleep 2s
+
+echo ------------------------------------------------------------------------------------------------
+echo --- iniciando o serviço de Bluetooth  ----------------------------------------------------------
+echo ------------------------------------------------------------------------------------------------
 
 systemctl enable bluetooth
+
+sleep 1s
