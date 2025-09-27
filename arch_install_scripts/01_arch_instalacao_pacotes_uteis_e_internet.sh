@@ -14,7 +14,7 @@ echo ---------------------------------------------------------------------------
 
 sleep 1s
 
-pacman -S sudo git file-roller dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog inxi fastfetch
+pacman -S sudo git file-roller dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog inxi
 var_r=$?
 
 if [ $var_r -eq 0 ]; then

@@ -10,4 +10,4 @@ yay -S swaylock-effects
 
 yay -S wlogout
 
-yay -S swww
+yay -S matugen-bin
