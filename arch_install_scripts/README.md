@@ -63,7 +63,7 @@ O [yay](https://aur.archlinux.org/packages/yay) é um [AUR Helper](https://wiki.
 
 ### Instalando o yay
 
-Será preciso do pacote *git*. A instalação do git está npo arquivo *01_arch_instalacao_pacotes_uteis_e_internet.sh**. Caso não tenha instalado basta usar o comando:
+Será preciso do pacote *git*. A instalação do git está npo arquivo *01_arch_instalacao_pacotes_uteis_e_internet.sh*. Caso não tenha instalado basta usar o comando:
 
 ~~~shell
 sudo pacman -S git
