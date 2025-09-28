@@ -6,7 +6,7 @@ sleep 2s
 
 sudo pacman -S hyprland hyprpaper waybar waypaper hyprpicker hyprlock hyprcursor hypridle kitty swww ttf-jetbrains-mono-nerd firefox 
 
-sudo pacman -S fastfetch thunar thunar-volman thunar-archive-plugin wofi swaylock  libinput  xdg-user-dirs btop
+sudo pacman -S fastfetch thunar thunar-volman thunar-archive-plugin wofi swaylock  libinput  xdg-user-dirs btop hyprpolkitagent polkit gvfs xdg-user-dirs
 
 
 
