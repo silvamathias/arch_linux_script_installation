@@ -4,7 +4,7 @@ Dica:  Use `ls cat README.md | grep passo_` para aparecer no terminal os código
 
 ## Instalação básica
 
-Entre os script's **00** e **01**, rode o código abaixo para acessar o sistema recem criado
+Entre os script's **00** e **01**, rode o código abaixo para acessar o sistema recém criado
 
 ~~~bash
 arch-chroot /mnt #passo_00
@@ -12,7 +12,7 @@ arch-chroot /mnt #passo_00
 
 ## Instalação/configuração
 
-Executes os cádigos a partir do item **02** de acordo com suas necessidades/preferências
+Executes os códigos a partir do item **02** de acordo com suas necessidades/preferências
 
 OBS: Caso tenha escolhido instalar o *Hyprland*, instale também o yay para facilitar a instalação dos pacotes *AUR*. Na seção [Instalando pacote AUR](#aur) está descrito como instalar o yay através do *AUR*. 
  
@@ -69,7 +69,7 @@ Será preciso do pacote *git*. A instalação do git está npo arquivo *01_arch_
 sudo pacman -S git
 ~~~
 
-Já com o git devidamente instalado, Vá até a página do pacote [yay](https://aur.archlinux.org/packages/yay), nela terá o *URL* do repositório git com o título de *Git Clone URL:*. Basta cricar para que seja copiado para a áres de transferência. 
+Já com o git devidamente instalado, Vá até a página do pacote [yay](https://aur.archlinux.org/packages/yay), nela terá o *URL* do repositório git com o título de *Git Clone URL:*. Basta criar para que seja copiado para a área de transferência. 
 
 Abra o terminal, vá até uma pasta ou crie uma para que possa clonar o repositório para dentro dela. use o comando `git clone <URL copiado do repositório>`
 
@@ -79,7 +79,7 @@ Se estiver ainda sem ambiente gráfico instalado use o comando abaixo.
 git clone https://aur.archlinux.org/yay.git #passo_06 - Caso esteja sem GUI e queira instalar o yay
 ~~~
 
-use o comando `cd` para entrar na pasta e depois use o comando abaixo como usuário normal
+use o comando `cd` para entrar na pasta. O usuário **root** não é autorizado rodar o comando `makepkg` para compilar o pacote, então use o comando `su novo_usuario` onde *novo_usuario* deve ser substituido pelo usuário criado no passo 5. Este comando fará você logar com o usuário informado. Depois use o comando abaixo como usuário normal. 
 
 ~~~shell
 makepkg -si #passo_07 - após entrar na pasta do projeto git baixado

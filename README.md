@@ -6,7 +6,7 @@ A forma que o [guia de instalação do Arch Linux](https://wiki.archlinux.org/ti
 
 Finalizando todo o passo-a-passo do guia de instalação você terá um sistema operacional com uma *interface de linha de comando* - **CLI**. Algo semelhante ao Ubuntu Server, que é destinado a servidores, quando o que temos em mente é um sistema completo como qualquer outra distro Linux ou até mesmo o Windows.
 
-O [guia de instalação](https://wiki.archlinux.org/title/Installation_guide_(Português)) é bem completo e abrangente justamente para atender a qualquer necessidade de quem esteja instalando o *Arch*, porém isto gera um problema. É difícil de achar o que irá precisar e em alguns casos a dificuldade está em saber o que é preciso ou não. Quando eu instalei pela primeira vez fui pego de surpresa ao saber que não bastava instalar um [Ambiente Gráfico](https://wiki.archlinux.org/title/Desktop_environment_(Português)), era preciso instalar um servidor de exibição como o [xorg](https://wiki.archlinux.org/title/Xorg_(Português)) ou o [wayland](https://wiki.archlinux.org/title/Wayland_(Português)) e que o *Bluetooth* não vinha junto com o *ambientes gráficos*. Então este projeto funciona como uma apostila focada e objetiva, escluindo tudo o que pode gerar confuzão quando se tem o objetivo de obter um sistema linux tão usual quanto qualquer outra distro linux. Nesta analogia, o guia de instalação seria um livro de mais de 1000 páginas que o professor indica para acompanhar as aulas mas este projeto seria a apostila que contem o que será cobrado na prova.
+O [guia de instalação](https://wiki.archlinux.org/title/Installation_guide_(Português)) é bem completo e abrangente justamente para atender a qualquer necessidade de quem esteja instalando o *Arch*, porém isto gera um problema. É difícil de achar o que irá precisar e em alguns casos a dificuldade está em saber o que é preciso ou não. Quando eu instalei pela primeira vez fui pego de surpresa ao saber que não bastava instalar um [Ambiente Gráfico](https://wiki.archlinux.org/title/Desktop_environment_(Português)), era preciso instalar um servidor de exibição como o [xorg](https://wiki.archlinux.org/title/Xorg_(Português)) ou o [wayland](https://wiki.archlinux.org/title/Wayland_(Português)) e que o *Bluetooth* não vinha junto com o *ambientes gráficos*. Então este projeto funciona como uma apostila focada e objetiva, excluindo tudo o que pode gerar confusão quando se tem o objetivo de obter um sistema linux tão usual quanto qualquer outra distro linux. Nesta analogia, o guia de instalação seria um livro de mais de 1000 páginas que o professor indica para acompanhar as aulas mas este projeto seria a apostila que contem o que será cobrado na prova.
 
 Para fazer uma instalação tendo em mente qualquer distro linux para uso doméstico deve-se seguir a lista abaixo.
 
@@ -27,9 +27,9 @@ Você pode seguir este passo-a-passo, aproveitando que está com os links, para 
 OBS:
 
 * saiba que por conta de diferença de hardware, a configuração contida aqui não funcione para o seu PC;
-* Os grupo de pacotes dos ambientes gráficos podem ser muito abrangentes ou não. Como exemplo cito os gerenciadores de exibição que no grupo de instalação do **GNOME** já vem incluso o *GDM*, Já o *XFCE* por exemplo devesse instalar algum a parte;
-* A instalação do programa é diferente da instalação do Ambiente gráfico do programa. Preste atenção nisto. As vezes o programa já está instalado e inclusive acessível pelo terminal mas o que está faltando é o ambiente gráfico para ser acessado através de janelas, e vice-versa. Bluetooth, Wi-Fi e Audio são bons exemplos onde esta situação pode ocorrer;
-* Lembre-se de sempre ativar os serviços, Geralmente são ativados através do comando [systemctl start](https://wiki.archlinux.org/title/Systemd). Bluetooth, internet, [gerenciadores de exibição](https://wiki.archlinux.org/title/Display_manager_(Português)) são exemplos de serviços que devem ser ativados.
+* Os grupo de pacotes dos ambientes gráficos podem ser muito abrangentes ou não. Como exemplo cito os gerenciadores de exibição que no grupo de instalação do **GNOME** já vem incluso o *GDM*, Já o *XFCE* por exemplo deve se instalar algum a parte;
+* A instalação do programa é diferente da instalação do Ambiente gráfico do programa. Preste atenção nisso. As vezes o programa já está instalado e inclusive acessível pelo terminal mas o que está faltando é o ambiente gráfico para ser acessado através de janelas, e vice-versa. Bluetooth, Wi-Fi e Audio são bons exemplos onde esta situação pode ocorrer;
+* Lembre-se de sempre ativar os serviços, geralmente são ativados através do comando [systemctl start](https://wiki.archlinux.org/title/Systemd). Bluetooth, internet, [gerenciadores de exibição](https://wiki.archlinux.org/title/Display_manager_(Português)) são exemplos de serviços que devem ser ativados.
 
 ## Objetivo do Projeto
 
@@ -67,7 +67,7 @@ Depois do uso, vá até o arquivo */etc/fstab* e comente a linha referente a est
 
 ## Instalação
 
-Este projeto auxilia a partir do intem 2 do [guia de instalação](https://wiki.archlinux.org/title/Installation_guide_(Português))
+Este projeto auxilia a partir do item 2 do [guia de instalação](https://wiki.archlinux.org/title/Installation_guide_(Português))
 
 ## Entendendo os arquivos
 
