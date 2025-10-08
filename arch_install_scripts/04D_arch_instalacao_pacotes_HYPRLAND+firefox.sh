@@ -20,7 +20,7 @@ echo ---------------------------------------------------------------------------
 echo --- Instalando pacotes de temas ----------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------
 
-sudo pacman -S breeze breeze5 breeze-gtk papirus-icon-theme nwg-look gtk4 gtk3 qt5-base qt6-base
+sudo pacman -S breeze breeze5 breeze-gtk papirus-icon-theme gtk4 gtk3 qt5-base qt6-base
 
 echo ------------------------------------------------------------------------------------------------
 echo --- Fim instalação pacotes de temas ------------------------------------------------------------

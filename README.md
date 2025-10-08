@@ -15,7 +15,7 @@ Para fazer uma instalação tendo em mente qualquer distro linux para uso domés
 3. Instalação de um gerenciador de boot ([GRUB](https://wiki.archlinux.org/title/GRUB_(Português)) para simplificar)
 4. Instalação de um servidor de exibição ( [Xorg](https://wiki.archlinux.org/title/Xorg_(Português)) ou  [wayland](https://wiki.archlinux.org/title/Wayland_(Português)): Se for jogar opte pelo Xorg)
 5. Instalação da placa gráfica, caso tenha ([Nvidia](https://wiki.archlinux.org/title/NVIDIA_(Português)), [AMD](https://wiki.archlinux.org/title/AMDGPU), [Intel](https://wiki.archlinux.org/title/Intel_graphics), etc)
-6. Instalação do ambiente gráfico ([Gnome, KDE, XFCE](https://wiki.archlinux.org/title/Desktop_environment_(Português)))
+6. Instalação do ambiente gráfico ([Gnome, KDE, XFCE](https://wiki.archlinux.org/title/Desktop_environment_(Português))) ou gerenciador de janela([Hyprland](https://hypr.land/), [Sway](https://swaywm.org/), [i3](https://i3wm.org/))
 7. Instalação do gerenciador de exibição (Veja opções [aqui](https://wiki.archlinux.org/title/Display_manager_(Português)))
 8. Instale/configure a [internet](https://wiki.archlinux.org/title/Dhcpcd) (opcional)
 9. Instale/configure a rede [WI-FI](https://wiki.archlinux.org/title/Network_configuration_(Português)/Wireless_(Português)) (opcional)
@@ -26,8 +26,9 @@ Você pode seguir este passo-a-passo, aproveitando que está com os links, para 
 
 OBS:
 
-* saiba que por conta de diferença de hardware, a configuração contida aqui não funcione para o seu PC;
-* Os grupo de pacotes dos ambientes gráficos podem ser muito abrangentes ou não. Como exemplo cito os gerenciadores de exibição que no grupo de instalação do **GNOME** já vem incluso o *GDM*, Já o *XFCE* por exemplo deve se instalar algum a parte;
+* saiba que por conta de diferença de hardware, a configuração contida aqui pode não funcionar para o seu PC;
+* Os grupos de pacotes dos ambientes gráficos podem ser muito abrangentes ou não. Como exemplo cito os gerenciadores de exibição que no grupo de instalação do **GNOME** já vem incluso o *GDM*, Já o *XFCE* por exemplo deve se instalar algum a parte;
+* Acegure-se que ao menos uma opção de gerenciador de arquivo (Thunar, Dolphin, Nautilus) e um emulador de terminal (GNOME Terminal, Konsole, Kitty) seja instalado. Ambientes gráficos geralmente já possuem em seus pacotes uma opção de cada além de uma suíte de escritório (LibreOffice, OnlyOffice, Calligra). Se optou por instalar um gerenciador de janelas será necessário a instalação manualmente;
 * A instalação do programa é diferente da instalação do Ambiente gráfico do programa. Preste atenção nisso. As vezes o programa já está instalado e inclusive acessível pelo terminal mas o que está faltando é o ambiente gráfico para ser acessado através de janelas, e vice-versa. Bluetooth, Wi-Fi e Audio são bons exemplos onde esta situação pode ocorrer;
 * Lembre-se de sempre ativar os serviços, geralmente são ativados através do comando [systemctl start](https://wiki.archlinux.org/title/Systemd). Bluetooth, internet, [gerenciadores de exibição](https://wiki.archlinux.org/title/Display_manager_(Português)) são exemplos de serviços que devem ser ativados.
 
@@ -37,11 +38,11 @@ Criei este projeto para me ajudar a instalar o **Arch linux**. Com isto, evito d
 
 Outra alternativa seria instalar alguma distribuição linux baseada no Arch, O [Manjaro](https://manjaro.org/) acaba sendo a escolha de muitos.
 
-Também aconselho a instalar primeiramente, mais de uma vez, em uma máquina virtual. Desta forma você elimina a ansiedade de colocar logo seu PC para funcionar e pode testar qual a configuração mais te agrada.
+Também aconselho a instalar primeiramente, mais de uma vez, em uma máquina virtual. Desta forma você elimina a ansiedade de colocar logo seu PC para funcionar e pode testar qual a configuração mais lhe agrada.
 
 ## Premissas
 
-O projeto só dá a opção de instalação do [gerenciador de boot](https://wiki.archlinux.org/title/Arch_boot_process_(Português)#Gerenciador_de_boot) [GRUB](https://wiki.archlinux.org/title/GRUB_(Português)) pois é mais completo, como pode ser visto no link, e também o mais usado; e para servidor de exibição só traz a opção do [Xorg](https://wiki.archlinux.org/title/Xorg_(Português)), por ser mais antigo, muitos sistemas são compatíveis com ele, ao contrário do *Wayland* que ainda estão desenvolvendo código para suportá-lo.
+O projeto só dá a opção de instalação do [gerenciador de boot](https://wiki.archlinux.org/title/Arch_boot_process_(Português)#Gerenciador_de_boot) [GRUB](https://wiki.archlinux.org/title/GRUB_(Português)) pois é mais completo, como pode ser visto no link, e também o mais usado; e para servidor de exibição só traz a opção do [Xorg](https://wiki.archlinux.org/title/Xorg_(Português)), por ser mais antigo, muitos sistemas são compatíveis com ele, outro motivo é que o Waylan, quando necessário, já está incluso no grupo de pacotes do ambiente gráfico.
 
 Para a internet só existe a configuração da [internet cabeada](https://wiki.archlinux.org/title/Dhcpcd)) pois é a que eu uso no meu computador. Clique [aqui](https://wiki.archlinux.org/title/Network_configuration_(Português)/Wireless_(Português)) para ver a documentação de WI-FI. 
 
@@ -97,5 +98,7 @@ Obs: O pacote de audio instalado pelo script é o [PulseAudio](https://wiki.arch
 
 ## Finalizando a Instalação
 
-Dentro da pasta "arch_install_scripts" possui outro arquivo **README.md** com mais instruções sobre a instalação.
+Dentro da pasta "arch_install_scripts" possui outro arquivo **README.md** com mais instruções sobre a instalação. O arquivo *999-passos_finais.sh* auxilia a execução destes comandos de forma experimental.
+
+Caso tenha instalado o hyprland, copie a pasta *.config* que está em *doc_file* pada dentro da pasta de seu usuário. Desta forma poderá usar as configurações que eu fiz para os programas instalados. Caso prefira, use os arquivos de configuração para configurar manualmente os programas que instalou.
 
