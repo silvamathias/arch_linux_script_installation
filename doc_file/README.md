@@ -43,13 +43,18 @@ Os aplicativos abaixo são mais estéticos ou de gosto pessoal podendo ser ignor
 
 ## Como Funciona?
 
-* troque o Papel de parede usando o Waypaper
-* o Waypaper dispara um arquivo bash chamado set_wallpaper.sh que por sua vez:
-    * Chama o Matugen para criar palheta de cores do papel de parede selecionado
-    * reinicia todos os programas para que usem a nova palheta de cores(configurado para Waybar, hyprland, Wlogout, Swaylock. Falta Fastfetch, kitty, GTK e QT, Firefox, rofi)
-    * Ordena o GTK ler novamente o próprio arquivo de configuração para manter as configurações antes da reinicialização realixada pelo Waypaper
-    * Salva o papel de parede em local e com nome conhecido para que o Wlogout possa usá-lo
-    * Criar um arquivo css com as cores da tabela para que seja usado por um HTML (salvo em .config/waybar/index.html) desenvolvido par facilitar a visualização das cores
+Quando o projeto usado em sua plenitude, o projeto irá funcionar conforme descrito abaixo. O arquivo **set_wallpaper.sh** consentra o disparo de todas as automações.
+
+![Esquema](/images/esquema.jpg)
+
+1- Troque o papel-de-parede usando o Waypaper;
+
+2- O Waypaper dispara um arquivo bash chamado *set_wallpaper.sh* que por sua vez:
+- Chama o Matugen para criar palheta de cores do papel de parede selecionado
+- Reinicia todos os programas para que usem a nova palheta de cores(configurado para Waybar, hyprland, Wlogout, Swaylock. Falta Fastfetch, kitty, GTK e QT, Firefox, rofi)
+- Ordena o GTK ler novamente o próprio arquivo de configuração para manter as configurações antes da reinicialização realixada pelo Waypaper
+- Salva o papel de parede em local e com nome conhecido para que o Wlogout possa usá-lo
+- Criar um arquivo css com as cores da tabela para que seja usado por um HTML (salvo em .config/waybar/index.html) desenvolvido par facilitar a visualização das cores
 
 
 
